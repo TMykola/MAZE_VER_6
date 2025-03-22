@@ -37,7 +37,7 @@ class Hero(Human):
             self.y -= self.step
             if self.collidelist(wall_list) != -1:
                 self.y += self.step
-        if self.walk["down"] and self.y < size_window[1]:
+        if self.walk["down"] and self.bottom < size_window[1]:
             self.y += self.step
             if self.collidelist(wall_list) != -1:
                 self.y -= self.step
@@ -46,7 +46,7 @@ class Hero(Human):
             if self.collidelist(wall_list) != -1:
                 self.x += self.step
             self.side = True
-        if self.walk["right"] and self.y < size_window[0]:
+        if self.walk["right"] and self.right < size_window[0]:
             self.x += self.step
             if self.collidelist(wall_list) != -1:
                 self.x -= self.step
