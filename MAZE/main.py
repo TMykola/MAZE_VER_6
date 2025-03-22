@@ -8,7 +8,7 @@ hp = 1
 
 font = pygame.font.Font(None, 40)
 
-hero = Hero(10,430,size_hero[0],size_hero[1],hero_image_list,3, 5)
+hero = Hero(10,430,size_hero[0],size_hero[1],hero_image_list,3, 2)
 bot1 = Bot(225, 240, size_bot[0], size_bot[1], bot_stay_image_list.copy(), 3, "vertical-left", radius = 230)
 bot2 = Bot(495, 295, size_bot[0], size_bot[1], bot_stay_image_list.copy(), 3, "vertical-left", radius = 170)
 bot3 = Bot(560, 28, size_bot[0], size_bot[1], bot_stay_image_list.copy(), 3, "horizontal-bottom", radius = 250)
@@ -27,7 +27,6 @@ bot_list.append(bot4)
 bot_list.append(bot5)
 heart_list.append(Heart(780, 450, 75, 75, heart_image_list))
 heart_list.append(Heart(315, 455, 75, 75, heart_image_list))
-
 
 game = True
 
